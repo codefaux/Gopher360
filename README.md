@@ -1,11 +1,10 @@
 PLEASE NOTE
 ======
 ```diff
-+I (Danin) am simply forking this for personal-ish use, but I'm open to reasonable modifications. At this time, @Tylemagne is responsible for 99% of the code. I've only done simple tweaks thusfar.
-<<<<<<< HEAD
--I CANNOT GUARANTEE THE ACCURACY OF MOST OF THE INFORMATION ON THIS PAGE, ESPECIALLY REGARDING CONFIGURATION. Previous author didn't update the documentation to keep up with the application. I'll correct what comes to my attention.
-=======
->>>>>>> 093b483af703db70c7179cd2aa5e6875d152e551
++I (Danin) am simply forking this for personal-ish use, but I'm open to reasonable modifications.
++At this time, @Tylemagne is responsible for 99% of the code. I've only done simple tweaks thusfar.
+-I CANNOT GUARANTEE THE ACCURACY OF MOST OF THE INFORMATION ON THIS PAGE, ESPECIALLY REGARDING CONFIGURATION.
+-(Previous author didn't update the documentation to keep up with the application. I'll correct what comes to my attention.)
 ```
 
 Download
@@ -15,11 +14,10 @@ Download
 
 Donate
 ======
-
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ETDWNUEJG2UY2)
 ```diff
 - This is @Tylemagne's donation link. Danin doesn't have one (yet).
 ```
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ETDWNUEJG2UY2)
 
 Compatible Controllers
 ======
@@ -135,7 +133,7 @@ Gopher360 automatically generates a config file, which will contain documentatio
 
 **RBumper**: Browser next
 
-**LBumber + RBummper**: Cycle speed (x3)
+**LBumber + RBummper**: Cycle speed (Multiple speeds)
 
 **LTrigger**: Space
 
@@ -145,10 +143,7 @@ Config file instructions
 ======
 There is a configuration file (config.ini) that can be reconfigured for simple keybindings.
 
-```diff
-- IF YOU ~~MESS SOMETHING UP~~ literally don't have a config file and in no other condition, Gopher will automatically generate a config file.
-- The previous author (@Tylemagne) did not document all config entries, but I (think that I) have. We'll see.
-```
+If you literally don't have a config file and in no other condition, Gopher will automatically generate a config file. The previous author (@Tylemagne) did not document all config entries, but I (think that I) have. We'll see.
 
 You can set which controller buttons will activate the configuration events based on the official microsoft keys hexadecimal values.
 
@@ -163,7 +158,7 @@ More instruction in the configuration file.
 
 Build Instructions
 ======
-Building is pretty straightforward (Visual Studio Community Edition seems to Just Work(tm) For Me(tm)), but you may get a "missing win32 include" error due to the solution targetting. ~~Simply follow the instructions the error provides (Project -> Retarget solution) to ensure your project has a working link to the libraries it needs. ~~ (Visual Studio Community 2019 prompts for this step)
+Building is pretty straightforward (Visual Studio Community Edition seems to Just Work(tm) For Me(tm)), but you may get a "missing win32 include" error due to the solution targetting. Simply follow the instructions the error provides (Project -> Retarget solution) to ensure your project has a working link to the libraries it needs. (NOTE: Visual Studio Community 2019 prompts for this step when loading the solution.)
 
 License
 ======
