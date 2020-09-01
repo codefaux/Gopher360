@@ -20,11 +20,13 @@ class Gopher
 private:
   int DEAD_ZONE = 6000;                 // Thumbstick dead zone to use for mouse movement. Absolute maximum shall be 65534.
   int SCROLL_DEAD_ZONE = 5000;          // Thumbstick dead zone to use for scroll wheel movement. Absolute maximum shall be 65534.
-  int TRIGGER_DEAD_ZONE = 0;            // Dead zone for the left and right triggers to detect a trigger press. 0 means that any press to trigger will be read as a button press.
+  int TRIGGER_DEAD_ZONE = 50;            // Dead zone for the left and right triggers to detect a trigger press. 0 means that any press to trigger will be read as a button press.
   float SCROLL_SPEED = 0.1f;             // Speed at which you scroll.
   const int FPS = 150;                  // Update rate of the main Gopher loop. Interpreted as cycles-per-second.
   const int SLEEP_AMOUNT = 1000 / FPS;  // Number of milliseconds to sleep per iteration.
   int SWAP_THUMBSTICKS = 0;             // Swaps the function of the thumbsticks when not equal to 0.
+  int SWAP_SCROLL = 0;                  // Swap the direction of vertical scrolling
+  int SWAP_HSCROLL = 0;                 // Swap the direction of horizontal scrolling
 
   XINPUT_STATE _currentState;
 

@@ -139,9 +139,21 @@ void ConfigFile::ExtractKeys()
     outfile << "#  ALLOWED CURSOR SPEEDS, FIRST WILL BE CHOSEN BY DEFAULT.  VALUES > 1.0 WILL BE IGNORED.  NO SPACES." << std::endl;
     outfile << "CURSOR_SPEED = ULTRALOW=0.005,LOW=0.015,MED=0.025,HIGH=0.04" << std::endl;
     outfile << "#  SET ACCELERATION FACTOR FOR NON-LINEAR CURSOR SPEED" << std::endl;
-    outfile << "# ACCELERATION_FACTOR = 3" << std::endl;
+    outfile << "ACCELERATION_FACTOR = 0" << std::endl;
     outfile << "#  Swaps the function of the thumbsticks. Set to 0 for default behavior or set to 1 to have the mouse movement on the right stick and scrolling on the left stick." << std::endl;
     outfile << "SWAP_THUMBSTICKS = 0" << std::endl;
+    outfile << "#  Control scrolling speed" << std::endl;
+    outfile << "SCROLL_SPEED = 0.1" << std::endl;
+    outfile << "#  Swaps the direction of (vertical) scrolling" << std::endl;
+    outfile << "SWAP_SCROLL = 0" << std::endl;
+    outfile << "#  Swaps the direction of (horizontal) scrolling" << std::endl;
+    outfile << "SWAP_HSCROLL = 0" << std::endl;
+    outfile << "#  Dead zone for non-scrolling input" << std::endl;
+    outfile << "DEAD_ZONE = 6000" << std::endl;
+    outfile << "#  Dead zone for scrolling input" << std::endl;
+    outfile << "SCROLL_DEAD_ZONE = 6000" << std::endl;
+
+
     // End config dump
 
     outfile.close();

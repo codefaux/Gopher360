@@ -187,6 +187,12 @@ void Gopher::loadConfigFile()
   // Swap stick functions
   SWAP_THUMBSTICKS = strtol(cfg.getValueOfKey<std::string>("SWAP_THUMBSTICKS").c_str(), 0, 0);
 
+  // Invert vertical scroll when configured
+  INVERT_SCROLL = strtol(cfg.getValueOfKey<std::string>("INVERT_SCROLL").c_str(), 0, 0);
+
+  // Invert horizontal scroll when configured
+  INVERT_HSCROLL = strtol(cfg.getValueOfKey<std::string>("INVERT_HSCROLL").c_str(), 0, 0);
+
   // Set the initial window visibility
   setWindowVisibility(_hidden);
 }
@@ -560,6 +566,9 @@ void Gopher::handleScrolling()
     ty = getDelta(_currentState.Gamepad.sThumbLY);
   }
 
+  if (SWAP_SCROLL) { ty *= -1; }  // Swap scroll directions if configured
+  if (SWAP_HSCROLL) { tx *= -1; } // Swap hscroll directions if configured
+  
   // Handle dead zone
   float magnitude = sqrt(tx * tx + ty * ty);
 
