@@ -1,3 +1,9 @@
+PLEASE NOTE
+======
+```diff
++I (Danin) am simply forking this for personal-ish use, but I'm open to reasonable modifications. At this time, @Tylemagne is responsible for 99% of the code. I've only done simple tweaks thusfar.
+```
+
 Download
 ======
 
@@ -7,6 +13,9 @@ Donate
 ======
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ETDWNUEJG2UY2)
+```diff
+- This is @Tylemagne's donation link. Danin doesn't have one (yet).
+```
 
 Compatible Controllers
 ======
@@ -133,7 +142,8 @@ Config file instructions
 There is a configuration file (config.ini) that can be reconfigured for simple keybindings.
 
 ```diff
-- IF YOU MESS SOMETHING UP, Gopher will automatically re-generate a config file.
+- IF YOU ~~MESS SOMETHING UP~~ literally don't have a config file and in no other condition, Gopher will automatically generate a config file.
+- The previous author (@Tylemagne) did not document all config entries, but I (think that I) have. We'll see.
 ```
 
 You can set which controller buttons will activate the configuration events based on the official microsoft keys hexadecimal values.
@@ -147,14 +157,9 @@ https://msdn.microsoft.com/en-us/library/windows/desktop/microsoft.directx_sdk.r
 More instruction in the configuration file.
 
 
-```diff
-+ If you make a config file you feel could benefit people with the same use scenario as you, feel free to make a pull request for it in the public configs directory.
-```
-
-
 Build Instructions
 ======
-Building is pretty straightforward, but you may get a "missing win32 include" error due to the solution targetting. Simply follow the instructions the error provides (Project -> Retarget solution) to ensure your project has a working link to the libraries it needs.
+Building is pretty straightforward (Visual Studio Community Edition seems to Just Work(tm) For Me(tm)), but you may get a "missing win32 include" error due to the solution targetting. ~~Simply follow the instructions the error provides (Project -> Retarget solution) to ensure your project has a working link to the libraries it needs. ~~ (Visual Studio Community 2019 prompts for this step)
 
 License
 ======
@@ -163,8 +168,5 @@ Gopher free software: you can redistribute it and/or modify it under the terms o
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with this program.  If not, see http://www.gnu.org/licenses/.
-
-
-
 
 ![Controller GIF](https://thumbs.gfycat.com/ElasticUnrulyBighorn-max-1mb.gif)
