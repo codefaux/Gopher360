@@ -25,8 +25,8 @@ private:
   const int FPS = 150;                  // Update rate of the main Gopher loop. Interpreted as cycles-per-second.
   const int SLEEP_AMOUNT = 1000 / FPS;  // Number of milliseconds to sleep per iteration.
   int SWAP_THUMBSTICKS = 0;             // Swaps the function of the thumbsticks when not equal to 0.
-  int SWAP_SCROLL = 0;                  // Swap the direction of vertical scrolling
-  int SWAP_HSCROLL = 0;                 // Swap the direction of horizontal scrolling
+  int INVERT_SCROLL = 0;                  // Swap the direction of vertical scrolling
+  int INVERT_HSCROLL = 0;                 // Swap the direction of horizontal scrolling
 
   XINPUT_STATE _currentState;
 

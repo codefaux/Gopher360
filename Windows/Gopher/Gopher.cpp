@@ -566,8 +566,8 @@ void Gopher::handleScrolling()
     ty = getDelta(_currentState.Gamepad.sThumbLY);
   }
 
-  if (SWAP_SCROLL) { ty *= -1; }  // Swap scroll directions if configured
-  if (SWAP_HSCROLL) { tx *= -1; } // Swap hscroll directions if configured
+  if (INVERT_SCROLL) { ty *= -1; }  // Swap scroll directions if configured
+  if (INVERT_HSCROLL) { tx *= -1; } // Swap hscroll directions if configured
   
   // Handle dead zone
   float magnitude = sqrt(tx * tx + ty * ty);
