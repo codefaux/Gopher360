@@ -19,6 +19,9 @@
 //changes 0.985 -> 0.986: Adding configuration file, changing from beeps to vibration.
 //changes 0.986 -> 0.989: Improved speeds and speed reporting, created automatic config generator!
 //TODO FOR FUTURE VERSIONS - offload speeds into config file
+//TODO - tell the previous TODO that it already got done
+//changes 0.989 -> ????: Previous author didn't track changes and I'm not reading commits to you.
+//changes !?@#$ -> I'm-not-doing-version-numbers-unless-this-goes-lots-further: Added scroll invert(s), actually listed all config entries (which I could find) into default config file
 
 #include <windows.h> // for Beep()
 #include <iostream>
