@@ -1,6 +1,6 @@
 #include "ConfigFile.h"
 #include <iostream>
-#include <fstream> 
+#include <fstream>
 #include <windows.h>
 
 void ConfigFile::removeComment(std::string &line) const
@@ -145,7 +145,7 @@ void ConfigFile::ExtractKeys()
     // End config dump
 
     outfile.close();
-    
+
     file.open(fName.c_str());
 
     if (!file)

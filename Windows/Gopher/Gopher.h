@@ -40,7 +40,7 @@ private:
   float _yRest = 0.0f;
 
   bool _disabled = false;           // Disables the Gopher controller mapping.
-  bool _vibrationDisabled = false;  // Prevents Gopher from producing controller vibrations. 
+  bool _vibrationDisabled = false;  // Prevents Gopher from producing controller vibrations.
   bool _hidden = false;             // Gopher main window visibility.
   bool _lTriggerPrevious = false;   // Previous state of the left trigger.
   bool _rTriggerPrevious = false;   // Previous state of the right trigger.
@@ -53,7 +53,7 @@ private:
   DWORD CONFIG_MOUSE_LEFT = NULL;
   DWORD CONFIG_MOUSE_RIGHT = NULL;
   DWORD CONFIG_MOUSE_MIDDLE = NULL;
-  
+
   // Gopher Settings
   DWORD CONFIG_HIDE = NULL;
   DWORD CONFIG_DISABLE = NULL;

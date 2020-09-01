@@ -76,12 +76,12 @@ Gopher::Gopher(CXBOXController * controller)
 }
 
 // Description:
-//   Reads and parses the configuration file, assigning values to the 
+//   Reads and parses the configuration file, assigning values to the
 //     configuration variables.
 void Gopher::loadConfigFile()
 {
   ConfigFile cfg("config.ini");
-  
+
   //--------------------------------
   // Configuration bindings
   //--------------------------------
@@ -412,7 +412,7 @@ void Gopher::handleDisableButton()
 }
 
 // Description:
-//   Toggles the vibration support after checking for the diable vibration command. 
+//   Toggles the vibration support after checking for the diable vibration command.
 //   This function will BLOCK to prevent rapidly toggling the vibration.
 void Gopher::handleVibrationButton()
 {
@@ -436,7 +436,7 @@ void Gopher::toggleWindowVisibility()
 
 // Description:
 //   Either hides or shows the window.
-// 
+//
 // Params:
 //   hidden   Hides the window when true
 void Gopher::setWindowVisibility(const bool &hidden) const
@@ -458,7 +458,7 @@ int sgn(T val)
 //   t  Analog thumbstick value to check and convert
 //
 // Returns:
-//   If the value is valid, t will be returned as-is as a float. If the value is 
+//   If the value is valid, t will be returned as-is as a float. If the value is
 //     invalid, 0 will be returned.
 float Gopher::getDelta(short t)
 {
@@ -476,7 +476,7 @@ float Gopher::getDelta(short t)
 //   tValue     The thumbstick value
 //   deadzone   The dead zone to use for this thumbstick
 //   accel      An exponent to use to create an input curve (Optional). 0 to use a linear input
-//   
+//
 // Returns:
 //   Multiplier used to properly scale the given thumbstick value.
 float Gopher::getMult(float lengthsq, float deadzone, float accel = 0.0f)
@@ -546,7 +546,7 @@ void Gopher::handleScrolling()
 {
   float tx;
   float ty;
-  
+
   if (SWAP_THUMBSTICKS == 0)
   {
     // Use right stick
@@ -799,7 +799,7 @@ HWND Gopher::getOskWindow()
 //   Removes an entry for a pressed key from the list.
 //
 // Params:
-//   key  The key value to remove from the pressed key list. 
+//   key  The key value to remove from the pressed key list.
 //
 // Returns:
 //   True if the given key was found and removed from the list.
