@@ -2,7 +2,10 @@ PLEASE NOTE
 ======
 ```diff
 +I (Danin) am simply forking this for personal-ish use, but I'm open to reasonable modifications. At this time, @Tylemagne is responsible for 99% of the code. I've only done simple tweaks thusfar.
+<<<<<<< HEAD
 -I CANNOT GUARANTEE THE ACCURACY OF MOST OF THE INFORMATION ON THIS PAGE, ESPECIALLY REGARDING CONFIGURATION. Previous author didn't update the documentation to keep up with the application. I'll correct what comes to my attention.
+=======
+>>>>>>> 093b483af703db70c7179cd2aa5e6875d152e551
 ```
 
 Download
