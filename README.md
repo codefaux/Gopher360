@@ -62,7 +62,7 @@ Gopher is a utility for couch-oriented PC users that wish to entirely control th
 
 Gopher separates itself from the competition by being efficient, small, portable, free, and fully open. If you have something you'd like to see improved, added, or changed, please fill out the survey.
 
-[![Github Releases (by Release)](https://img.shields.io/github/downloads/codefaux/Gopher360/v0.989/total.svg)]()
+[![Github Releases (by Release)](https://img.shields.io/github/downloads/codefaux/Gopher360/v0.5.0/total.svg)]()
 
 [![GitHub repo size in bytes](https://img.shields.io/github/repo-size/codefaux/Gopher360.svg)]()
 
