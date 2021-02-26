@@ -13,7 +13,7 @@ If I have time, I might look into implementing ideas. My interests swing through
 Download
 ======
 
-[![Github All Releases](https://img.shields.io/github/downloads/codefaux/Gopher360/total.svg?style=flat&label=Download%20Gopher360%20Standalone&logo=appveyor&colorA=00cc0a&colorB=000000)](https://github.com/codefaux/Gopher360/releases/download/v0.989/Gopher.exe)
+[![Github All Releases](https://img.shields.io/github/downloads/codefaux/Gopher360/total.svg?style=flat&label=Download%20Gopher360%20Standalone&logo=appveyor&colorA=00cc0a&colorB=000000)](https://github.com/codefaux/Gopher360/releases/download/v0.5.0/Gopher360_v0.5.0.zip)
 
 Donate
 ======
